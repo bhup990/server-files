@@ -1,0 +1,301 @@
+*{
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+	font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    width: 100%;
+}
+
+
+/******************header section*****************/
+#loader{
+    color: #fff;
+    position: fixed;
+    background: #fff url(../img/Spin-1s-200px.gif) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+}
+
+header{
+	width: 100%;
+	height: auto;
+	background: #fff;	
+}
+.header-icons {
+    padding: 11px 0;
+}
+.header-icons a{
+	padding: 0 10px;
+	color: #f29a87;
+}
+.header-inline-txt{
+	border-bottom: 1px solid #f29a87;
+}
+nav .collapse{
+	justify-content: flex-end;
+}
+ .navigation .navbar .collapse ul li a{
+    color: #3a3030;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 600;
+}
+ .navigation .navbar .collapse ul li a:hover{
+    color: #f29a87;
+ }
+
+header{
+	z-index: 1;
+    position: sticky;
+    top: 0;
+    animation: nav 1s ease-in-out; 
+}
+@keyframes nav{
+    to{
+        top:0px;
+    }
+    from{
+        top:20px;
+    }
+}
+.main-header{
+    -webkit-box-shadow: 0 8px 6px -6px #00000026;
+    -moz-box-shadow: 0 8px 6px -6px #00000026;
+    box-shadow: 0 8px 6px -6px #00000026;
+}
+
+/******************header section*****************/
+
+/******************Main section*****************/
+main{
+	width: 100%;
+	height: 100%;
+}
+main .banner-caption h2{
+	color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+main .banner-caption{
+	padding-bottom: 80px;
+}
+main .banner-caption .section-tittle{
+	padding: 60px 0px;
+}
+main .banner-caption .section-tittle{
+	line-height: 30px;
+}
+main .banner-caption h2::after{
+	content: '';
+    position: absolute;
+    width: 50px;
+    border: 2px solid #000;
+    overflow: hidden;
+    bottom: 0px;
+    left: calc(50% - 50px);
+}
+main.banner-caption .section-tittle p{
+	font-family: "Roboto", sans-serif;
+    color: #777;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+main .banner-caption .product-section
+ .popular-img .product-sec-inline{
+    border: 2px solid #f29a87;
+    overflow: hidden;
+}
+main .banner-caption .product-section
+ .single-popular-items button{
+    font-size: 18px;
+    color: #fff;
+    background: #f29a87;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-top: 8px;
+}
+
+main .form-section{
+	background: #f29a87;
+	margin-bottom: 100px;
+}
+
+form{
+	margin: 60px 0;
+}
+.form-section input{
+	width: 100%;
+	padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.form-section label{
+	font-size: 10px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.form-section select{
+	width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    color: #6d5252;
+    font-family: "Roboto", sans-serif;
+}
+main .form-section .from-btn{
+	display: flex;
+    justify-content: center;
+} 
+
+main .form-section .from-btn button{
+	width: 120px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #443737;
+    font-family: "Roboto", sans-serif;
+    padding: 8px;
+}
+main .second-last-sec h3{
+	color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+main .second-last-sec p{
+	font-family: "Roboto", sans-serif;
+    color: #777;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.iframe-top-cap{
+	background: #f29a87;
+    padding: 15px 37px;
+}
+.map-responsive .iframe-top-cap .dflex{
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: auto;
+}
+.map-responsive .iframe-top-cap .dflex p{
+	margin: 0;
+	padding: 0 32px;
+    font-size: 16px;
+    line-height: normal;
+    color: #fff;
+    line-height: 20px;
+}
+.map-responsive .iframe-top-cap .dflex a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.map-responsive .iframe-top-cap .dflex i{
+	font-size: 25px;
+    color: #fff;
+}
+/******************Main section*****************/
+
+
+/******************poppup - modal*****************/
+
+.modal .modal-content .modal-body form{
+    margin: 0;
+}
+
+.modal .modal-content .modal-body form input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid silver;
+    outline: none;
+}
+.modal .modal-content .modal-body form label{
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.modal .modal-content .modal-body form select{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid silver;
+}
+.modal .modal-content .modal-body form .from-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.modal .modal-content 
+.modal-body form .from-btn button{
+    background: #f29a87;
+    color: #fff;
+    padding: 9px 25px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+.modal .modal-content 
+.modal-body form .from-btn .btn::hover{
+    background-color: #a96759;
+}
+
+/******************poppup - modal*****************/
+
+/******************footer*****************/
+footer{
+    height: auto;
+}
+footer .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+footer .center i{
+    color: #222222;
+    font-size: 17px;
+    padding: 5px 10px;
+    transition: all 0.4s ease-out 0s;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+footer .center i:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    color: #f29a87;
+}
+footer .center a{
+    text-decoration: none;
+}
+footer .center a p{
+    color: #888888;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 0px;
+    color: #f29a87;
+}
+
+/******************footer*****************/
+
+/******************Animation*****************

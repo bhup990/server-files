@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/zoom-img.css">
+  </head>
+  <body>
+    <div class="container newProduct">
+
+        <div class="content">
+         <div class="section">
+           <img class="myImg" src="img/uncut-choker1.png" alt="Polki & Pearls Necklace">
+           <p class="txt-popup">Polki & Pearls Necklace</p>
+         </div>
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enquiry now</button>
+       </div>
+
+
+        <div class="content">
+         <div class="section">
+           <img class="myImg" src="img/uncut-choker2.png" alt="Uncut Jadau  Pearl Green Stone Choker">
+           <p class="txt-popup" src="Uncut Jadau  Pearl Green Stone Choker">Uncut Jadau  Pearl Green Stone Choker</p>
+         </div>
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enquiry now</button>
+       </div>
+
+       <div class="content">
+        <div class="section">
+          <img class="myImg" src="img/uncut-choker3.png" alt="Radiant Pearl & Polki Choker">
+          <p class="txt-popup">Radiant Pearl & Polki Choker</p>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enquiry now</button>
+      </div>
+
+
+       <div class="content">
+        <div class="section" href="img/uncut-choker4.png">
+          <img class="myImg" src="img/uncut-choker4.png" alt="Saawariya Necklace (Uncut Jadau, Green Stone & Pearls)">
+          <p class="txt-popup" src="Uncut Jadau  Pearl Green Stone Choker">Saawariya Necklace (Uncut Jadau, Green Stone & Pearls)</p>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enquiry now</button>
+      </div>
+
+      <div class="content">
+       <div class="section">
+         <img class="myImg" src="img/uncut-choker5.png" alt="Uncut Jadau Pearl Choker">
+         <p class="txt-popup" src="Uncut Jadau  Pearl Green Stone Choker">Uncut Jadau Pearl Choker</p>
+       </div>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enquiry now</button>
+     </div>
+
+    </div>
+
+      <!--Products Modal -->
+      <div id="myModal" class="modal fadeIn">
+
+        <div class="content">
+
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+
+          <div class="content-modal show" href="img/uncut-choker5.png">
+            <img src="" class="modal-img" id="show-img" onclick="zoomImg()">
+          </div>
+
+          <div class="modal-text">
+              <p id="caption"></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enquiry now</button>
+          </div>
+
+        </div>
+      </div>
+      <!--Products Modal -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+      // Get the modal
+      var modal = $("#myModal");
+      var modalImg = modal.find(".modal-img");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = $(".myImg");
+      var captionBox = $("#caption");
+
+      img.click(function() {
+          modalImg.attr('src', $(this).attr('src'));
+          captionBox.text( $(this).attr('alt'));
+          modal.show();
+      });
+
+      // Get the elements that closes the modal
+      var modalCloser = $(".close");
+
+      // When the user clicks on the close element, close the modal
+      modalCloser.click(function() {
+          modal.hide();
+      });
+    </script>
+  </body>
+</html>

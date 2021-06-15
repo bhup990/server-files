@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+}
+.main{
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+	text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+form{
+	text-align: left;
+	text-align: left;
+    border: 1px solid silver;
+    padding: 35px 50px;
+    border-radius: 10px;
+}
+label{
+	font-size: 20px;
+}
+input{
+	padding: 5px 15px;
+    margin: 15px 5px;
+}
+.btn{
+	text-align: center;
+}
+button{
+	padding: 5px 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
